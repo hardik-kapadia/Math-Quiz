@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_view_scores"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.s.braintest.viewScores">
+
+    <ListView
+        android:layout_height="400dp"
+        android:id="@+id/scoreList"
+        android:layout_width="80dp"
+        android:layout_marginStart="17dp"
+        android:layout_alignTop="@+id/nameList"
+        android:layout_toEndOf="@+id/nameList" />
+
+    <ListView
+        android:layout_height="400dp"
+        android:id="@+id/nameList"
+        android:layout_width="110dp"
+        android:layout_alignTop="@+id/idList"
+        android:layout_alignStart="@+id/scoreExit" />
+
+    <TextView
+        android:text="Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="24sp"
+        android:layout_marginTop="38dp"
+        android:layout_marginStart="7dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/scoreList" />
+
+    <TextView
+        android:text="Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_alignBaseline="@+id/textView8"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_alignEnd="@+id/scoreExit" />
+
+    <TextView
+        android:text="Roll no."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignEnd="@+id/idList"
+        android:layout_marginEnd="7dp" />
+
+    <ListView
+        android:layout_height="400dp"
+        android:id="@+id/idList"
+        android:layout_marginEnd="7dp"
+        android:layout_width="100dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/nameList" />
+
+    <Button
+        android:text="Exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scoreExit"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:onClick="scoreExiter"
+        android:layout_below="@+id/nameList"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

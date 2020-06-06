@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_get_data"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.s.braintest.GetData"
+    android:background="@drawable/bg">
+
+    <Button
+        android:text="Go!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="86dp"
+        android:id="@+id/button4"
+        android:onClick="go"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/getRno"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Name:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:id="@+id/textView3"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/diff2"
+        android:layout_marginEnd="23dp" />
+
+    <TextView
+        android:text="Roll No.:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_below="@+id/getName"
+        android:layout_alignEnd="@+id/textView3" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/getName"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="200dp"
+        android:textColor="@android:color/background_dark"
+        android:hint="Enter your Name Here"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignStart="@+id/getRno" />
+
+    <Button
+        android:text="Easy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:id="@+id/diff1"
+        android:layout_below="@+id/getRno"
+        android:layout_toStartOf="@+id/diff2"
+        android:onClick="diff1"
+        android:background="#00e600"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:text="Hard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/diff3"
+        android:layout_alignBaseline="@+id/diff2"
+        android:layout_alignBottom="@+id/diff2"
+        android:layout_toEndOf="@+id/diff2"
+        android:onClick="diff3"
+        android:background="#cc0000"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/getRno"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="200dp"
+        android:textColor="@android:color/background_dark"
+        android:hint="Enter your Roll no. here"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_marginStart="14dp" />
+
+    <Button
+        android:text="Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/diff2"
+        android:layout_alignBaseline="@+id/diff1"
+        android:layout_alignBottom="@+id/diff1"
+        android:layout_alignStart="@+id/button4"
+        android:onClick="diff2"
+        android:background="#0000cc"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
