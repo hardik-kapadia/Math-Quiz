@@ -12,7 +12,7 @@
     android:background="@drawable/bg">
 
     <Button
-        android:text="Score"
+        android:text="@string/score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/option2"
@@ -23,7 +23,7 @@
         android:textColor="@android:color/white" />
 
     <Button
-        android:text="Start"
+        android:text="@string/start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button"
@@ -35,7 +35,7 @@
         android:textColor="@android:color/white" />
 
     <Button
-        android:text="Exit"
+        android:text="@string/exit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button3"
